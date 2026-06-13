@@ -1,0 +1,4 @@
+/* Custom overrides for Forevergreen site */
+html {
+  scroll-behavior: smooth;
+}
