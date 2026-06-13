@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Forevergreen Landscape Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fg-green': '#2d6a2d',
+            'fg-gold': '#f5a623',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="text-gray-700">
+
+  <!-- Navbar -->
+  <nav aria-label="Main" class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html">
+        <img src="img/ForeverGreenLandscapeLogo.png" alt="Forevergreen Landscape Management" class="h-16">
+      </a>
+      <div class="hidden md:flex gap-8 font-medium">
+        <a href="index.html" class="text-fg-green hover:text-fg-gold transition-colors">Home</a>
+        <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
+        <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
+        <a href="contact.html" class="text-fg-gold font-bold transition-colors">Contact</a>
+      </div>
+      <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden text-fg-green focus:outline-none focus-visible:ring-2 focus-visible:ring-fg-gold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4 flex flex-col gap-3 font-medium border-t border-gray-100">
+      <a href="index.html" class="text-fg-green hover:text-fg-gold transition-colors">Home</a>
+      <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
+      <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
+      <a href="contact.html" class="text-fg-gold font-bold">Contact</a>
+    </div>
+  </nav>
+
+<main>
+  <!-- Page Header -->
+  <section class="bg-fg-green text-white py-16 px-4 text-center">
+    <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+    <p class="text-green-200">We'd love to hear from you</p>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="flex flex-wrap justify-center gap-6 mb-10">
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center w-full sm:w-56">
+          <div class="text-3xl mb-3" aria-hidden="true">📞</div>
+          <h2 class="font-bold text-fg-green mb-2">Phone</h2>
+          <a href="tel:8597340202" class="text-gray-500 hover:text-fg-gold transition-colors">(859) 734-0202</a>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center w-full sm:w-56">
+          <div class="text-3xl mb-3" aria-hidden="true">✉️</div>
+          <h2 class="font-bold text-fg-green mb-2">Email</h2>
+          <a href="mailto:forevergreen36@yahoo.com" class="text-gray-500 hover:text-fg-gold transition-colors break-all text-sm">forevergreen36@yahoo.com</a>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center w-full sm:w-56">
+          <div class="text-3xl mb-3" aria-hidden="true">📍</div>
+          <h2 class="font-bold text-fg-green mb-2">Location</h2>
+          <p class="text-gray-500">Harrodsburg, Kentucky</p>
+        </div>
+
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-8 text-center">
+        <h2 class="text-2xl font-bold text-fg-green mb-4">Hours</h2>
+        <div class="text-gray-500 space-y-1">
+          <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+          <p>Saturday: 8:00 AM – 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <p class="text-xs text-gray-400 mt-3">Hours may vary by season</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer class="bg-fg-green text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <img src="img/ForeverGreenLandscapeLogo.png" alt="Forevergreen Landscape Management" class="h-14 brightness-0 invert">
+      <div class="flex flex-col md:flex-row gap-6 font-medium text-sm">
+        <a href="index.html" class="hover:text-fg-gold transition-colors">Home</a>
+        <a href="services.html" class="hover:text-fg-gold transition-colors">Services</a>
+        <a href="about.html" class="hover:text-fg-gold transition-colors">About</a>
+        <a href="contact.html" class="text-fg-gold font-bold">Contact</a>
+      </div>
+      <div class="text-sm text-center md:text-right text-green-200">
+        <p>(859) 734-0202</p>
+        <p>forevergreen36@yahoo.com</p>
+        <p>Harrodsburg, KY</p>
+      </div>
+    </div>
+    <p class="text-center text-xs text-green-400 mt-6">&copy; 2026 Forevergreen Landscape Management. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn.addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+    });
+  </script>
+</body>
+</html>
