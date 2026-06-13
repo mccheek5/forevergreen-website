@@ -33,7 +33,7 @@
         <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
         <a href="contact.html" class="text-fg-green hover:text-fg-gold transition-colors">Contact</a>
       </div>
-      <button id="menu-btn" class="md:hidden text-fg-green focus:outline-none">
+      <button id="menu-btn" class="md:hidden text-fg-green focus:outline-none focus-visible:ring-2 focus-visible:ring-fg-gold" aria-expanded="false">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -47,6 +47,7 @@
     </div>
   </nav>
 
+  <main>
   <!-- Hero -->
   <section class="bg-white py-24 px-4 text-center">
     <h1 class="text-4xl md:text-5xl font-bold text-fg-green mb-4">Professional Lawn Care &amp; Landscaping</h1>
@@ -58,29 +59,29 @@
   <section class="bg-gray-50 py-16 px-4">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-fg-green text-center mb-10">What We Do</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
-          <div class="text-4xl mb-3">🌿</div>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 w-full sm:w-72">
+          <div class="text-4xl mb-3" aria-hidden="true">🌿</div>
           <h3 class="font-bold text-fg-green text-lg mb-2">Lawn Mowing</h3>
           <p class="text-gray-500 text-sm">Reliable, consistent mowing to keep your lawn looking its best.</p>
         </div>
-        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
-          <div class="text-4xl mb-3">🪵</div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 w-full sm:w-72">
+          <div class="text-4xl mb-3" aria-hidden="true">🪵</div>
           <h3 class="font-bold text-fg-green text-lg mb-2">Mulching</h3>
           <p class="text-gray-500 text-sm">Fresh mulch to protect your landscaping and boost curb appeal.</p>
         </div>
-        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
-          <div class="text-4xl mb-3">🌳</div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 w-full sm:w-72">
+          <div class="text-4xl mb-3" aria-hidden="true">🌳</div>
           <h3 class="font-bold text-fg-green text-lg mb-2">Landscaping Design</h3>
           <p class="text-gray-500 text-sm">Custom designs to transform your outdoor space.</p>
         </div>
-        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
-          <div class="text-4xl mb-3">✂️</div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 w-full sm:w-72">
+          <div class="text-4xl mb-3" aria-hidden="true">✂️</div>
           <h3 class="font-bold text-fg-green text-lg mb-2">Trimming</h3>
           <p class="text-gray-500 text-sm">Precise trimming of hedges, shrubs, and edges for a clean finish.</p>
         </div>
-        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
-          <div class="text-4xl mb-3">🌱</div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 w-full sm:w-72">
+          <div class="text-4xl mb-3" aria-hidden="true">🌱</div>
           <h3 class="font-bold text-fg-green text-lg mb-2">Crabgrass Control</h3>
           <p class="text-gray-500 text-sm">Effective treatment to keep your lawn healthy and weed-free.</p>
         </div>
@@ -90,6 +91,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-fg-green text-white py-10 px-4">
@@ -111,8 +113,11 @@
   </footer>
 
   <script>
-    document.getElementById('menu-btn').addEventListener('click', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn.addEventListener('click', function () {
       document.getElementById('mobile-menu').classList.toggle('hidden');
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
     });
   </script>
 </body>
