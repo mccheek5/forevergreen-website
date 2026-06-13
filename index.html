@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forevergreen Landscape Management — Harrodsburg, KY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fg-green': '#2d6a2d',
+            'fg-gold': '#f5a623',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="text-gray-700">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html">
+        <img src="img/ForeverGreenLandscapeLogo.png" alt="Forevergreen Landscape Management" class="h-16">
+      </a>
+      <div class="hidden md:flex gap-8 font-medium">
+        <a href="index.html" class="text-fg-gold font-bold transition-colors">Home</a>
+        <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
+        <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
+        <a href="contact.html" class="text-fg-green hover:text-fg-gold transition-colors">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-fg-green focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4 flex flex-col gap-3 font-medium border-t border-gray-100">
+      <a href="index.html" class="text-fg-gold font-bold">Home</a>
+      <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
+      <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
+      <a href="contact.html" class="text-fg-green hover:text-fg-gold transition-colors">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-white py-24 px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-fg-green mb-4">Professional Lawn Care &amp; Landscaping</h1>
+    <p class="text-lg text-gray-500 mb-8">Serving Harrodsburg, Kentucky and surrounding areas</p>
+    <a href="contact.html" class="bg-fg-gold text-white font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition-colors">Contact Us</a>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-fg-green text-center mb-10">What We Do</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
+          <div class="text-4xl mb-3">🌿</div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Lawn Mowing</h3>
+          <p class="text-gray-500 text-sm">Reliable, consistent mowing to keep your lawn looking its best.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
+          <div class="text-4xl mb-3">🪵</div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Mulching</h3>
+          <p class="text-gray-500 text-sm">Fresh mulch to protect your landscaping and boost curb appeal.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
+          <div class="text-4xl mb-3">🌳</div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Landscaping Design</h3>
+          <p class="text-gray-500 text-sm">Custom designs to transform your outdoor space.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
+          <div class="text-4xl mb-3">✂️</div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Trimming</h3>
+          <p class="text-gray-500 text-sm">Precise trimming of hedges, shrubs, and edges for a clean finish.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100">
+          <div class="text-4xl mb-3">🌱</div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Crabgrass Control</h3>
+          <p class="text-gray-500 text-sm">Effective treatment to keep your lawn healthy and weed-free.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="services.html" class="bg-fg-green text-white font-bold px-8 py-3 rounded-full hover:bg-green-800 transition-colors">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-fg-green text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <img src="img/ForeverGreenLandscapeLogo.png" alt="Forevergreen" class="h-14 brightness-0 invert">
+      <div class="flex flex-col md:flex-row gap-6 font-medium text-sm">
+        <a href="index.html" class="text-fg-gold font-bold">Home</a>
+        <a href="services.html" class="hover:text-fg-gold transition-colors">Services</a>
+        <a href="about.html" class="hover:text-fg-gold transition-colors">About</a>
+        <a href="contact.html" class="hover:text-fg-gold transition-colors">Contact</a>
+      </div>
+      <div class="text-sm text-center md:text-right text-green-200">
+        <p>(859) 734-0202</p>
+        <p>forevergreen36@yahoo.com</p>
+        <p>Harrodsburg, KY</p>
+      </div>
+    </div>
+    <p class="text-center text-xs text-green-400 mt-6">&copy; 2026 Forevergreen Landscape Management. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
