@@ -29,11 +29,12 @@
       <a href="index.html">
         <img src="img/ForeverGreenLandscapeLogo.png" alt="Forevergreen Landscape Management" class="h-16">
       </a>
-      <div class="hidden md:flex gap-8 font-medium">
+      <div class="hidden md:flex gap-8 font-medium items-center">
         <a href="index.html" class="text-fg-gold font-bold transition-colors">Home</a>
         <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
         <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
         <a href="contact.html" class="text-fg-green hover:text-fg-gold transition-colors">Contact</a>
+        <a href="tel:8597340202" class="bg-fg-gold text-white font-bold px-4 py-2 rounded-full hover:bg-yellow-500 transition-colors text-sm">(859) 734-0202</a>
       </div>
       <button id="menu-btn" aria-label="Toggle navigation menu" class="md:hidden text-fg-green focus:outline-none focus-visible:ring-2 focus-visible:ring-fg-gold" aria-expanded="false">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,6 +47,7 @@
       <a href="services.html" class="text-fg-green hover:text-fg-gold transition-colors">Services</a>
       <a href="about.html" class="text-fg-green hover:text-fg-gold transition-colors">About</a>
       <a href="contact.html" class="text-fg-green hover:text-fg-gold transition-colors">Contact</a>
+      <a href="tel:8597340202" class="text-fg-gold font-bold">(859) 734-0202</a>
     </div>
   </nav>
 
@@ -53,45 +55,61 @@
   <!-- Hero -->
   <section>
     <img src="img/FGFBBanner.png" alt="Forevergreen Landscape Management — Contact us for a free estimate. Call (859) 734-0202." class="w-full">
-    <div class="bg-white py-8 text-center">
-      <a href="contact.html" class="bg-fg-gold text-white font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition-colors">Get a Free Estimate</a>
+  </section>
+
+  <!-- Highlights Strip -->
+  <section class="bg-fg-green text-white py-6 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-16 text-center">
+      <div class="flex items-center gap-3">
+        <svg class="w-7 h-7 text-fg-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span class="font-semibold">Harrodsburg, Kentucky</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg class="w-7 h-7 text-fg-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        <span class="font-semibold">Locally Owned &amp; Operated</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg class="w-7 h-7 text-fg-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="font-semibold">Free Estimates</span>
+      </div>
     </div>
   </section>
 
-  <!-- Services Highlights -->
-  <section class="bg-gray-50 py-16 px-4">
+  <!-- Services Section -->
+  <section class="bg-white py-20 px-4">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-fg-green text-center mb-10">What We Do</h2>
+      <h2 class="text-3xl font-bold text-fg-green text-center mb-3">What We Do</h2>
+      <p class="text-center text-gray-500 mb-12">Professional lawn care and landscaping for Harrodsburg and surrounding areas</p>
       <div class="flex flex-wrap justify-center gap-6">
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 w-full sm:w-72 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 w-full sm:w-72 overflow-hidden hover:shadow-lg transition-shadow">
           <img src="img/FGLawn1.jpg" alt="Freshly mowed lawn" class="w-full h-48 object-cover">
           <div class="p-6 text-center">
             <h3 class="font-bold text-fg-green text-lg mb-2">Lawn Mowing</h3>
             <p class="text-gray-500 text-sm">Reliable, consistent mowing to keep your lawn looking its best.</p>
           </div>
         </div>
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 w-full sm:w-72 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 w-full sm:w-72 overflow-hidden hover:shadow-lg transition-shadow">
           <img src="img/FGMulch.jpg" alt="Mulching and landscaping work" class="w-full h-48 object-cover">
           <div class="p-6 text-center">
             <h3 class="font-bold text-fg-green text-lg mb-2">Mulching</h3>
             <p class="text-gray-500 text-sm">Fresh mulch to protect your landscaping and boost curb appeal.</p>
           </div>
         </div>
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 w-full sm:w-72 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 w-full sm:w-72 overflow-hidden hover:shadow-lg transition-shadow">
           <img src="img/FGSteps.jpg" alt="Custom stone steps landscaping design" class="w-full h-48 object-cover">
           <div class="p-6 text-center">
             <h3 class="font-bold text-fg-green text-lg mb-2">Landscaping Design</h3>
             <p class="text-gray-500 text-sm">Custom designs to transform your outdoor space.</p>
           </div>
         </div>
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 w-full sm:w-72 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 w-full sm:w-72 overflow-hidden hover:shadow-lg transition-shadow">
           <img src="img/FGTrimming.jpg" alt="Trimmed shrubs and landscaping" class="w-full h-48 object-cover">
           <div class="p-6 text-center">
             <h3 class="font-bold text-fg-green text-lg mb-2">Trimming</h3>
             <p class="text-gray-500 text-sm">Precise trimming of hedges, shrubs, and edges for a clean finish.</p>
           </div>
         </div>
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 w-full sm:w-72 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 w-full sm:w-72 overflow-hidden hover:shadow-lg transition-shadow">
           <img src="img/FGCrabgrass.jpg" alt="Crabgrass control treatment supplies" class="w-full h-48 object-cover">
           <div class="p-6 text-center">
             <h3 class="font-bold text-fg-green text-lg mb-2">Crabgrass Control</h3>
@@ -104,10 +122,51 @@
       </div>
     </div>
   </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-fg-green text-center mb-3">Why Choose Forevergreen?</h2>
+      <p class="text-center text-gray-500 mb-12">We treat every property like it's our own</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="bg-fg-green rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-fg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Reliable &amp; On Time</h3>
+          <p class="text-gray-500 text-sm">We show up when we say we will, every time. Your schedule matters to us.</p>
+        </div>
+        <div>
+          <div class="bg-fg-green rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-fg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Quality You Can See</h3>
+          <p class="text-gray-500 text-sm">Professional results on every job, big or small. We take pride in the details.</p>
+        </div>
+        <div>
+          <div class="bg-fg-green rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-fg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 class="font-bold text-fg-green text-lg mb-2">Locally Owned</h3>
+          <p class="text-gray-500 text-sm">Based in Harrodsburg, KY. We're your neighbors — and we care about our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-fg-green py-20 px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready for a Better Looking Lawn?</h2>
+    <p class="text-green-200 text-lg mb-8">Contact us today for a free estimate — no obligation.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="contact.html" class="bg-fg-gold text-white font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition-colors">Get a Free Estimate</a>
+      <a href="tel:8597340202" class="bg-white text-fg-green font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">(859) 734-0202</a>
+    </div>
+  </section>
 </main>
 
   <!-- Footer -->
-  <footer class="bg-fg-green text-white py-10 px-4">
+  <footer class="bg-gray-900 text-white py-10 px-4">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-3">
         <span class="text-white font-bold text-lg">Forevergreen Landscape Management</span>
@@ -121,13 +180,13 @@
         <a href="about.html" class="hover:text-fg-gold transition-colors">About</a>
         <a href="contact.html" class="hover:text-fg-gold transition-colors">Contact</a>
       </div>
-      <div class="text-sm text-center md:text-right text-green-200">
+      <div class="text-sm text-center md:text-right text-gray-400">
         <p>(859) 734-0202</p>
         <p>forevergreen36@yahoo.com</p>
         <p>Harrodsburg, KY</p>
       </div>
     </div>
-    <p class="text-center text-xs text-green-400 mt-6">&copy; 2026 Forevergreen Landscape Management. All rights reserved.</p>
+    <p class="text-center text-xs text-gray-600 mt-6">&copy; 2026 Forevergreen Landscape Management. All rights reserved.</p>
   </footer>
 
   <script>
